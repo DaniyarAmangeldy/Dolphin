@@ -1,0 +1,268 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="hideSoftKeyboard">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Filltoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="?attr/colorPrimary" />
+    <FrameLayout
+        android:id="@+id/Createcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Filltoolbar"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".fragments.FillBlankFragment">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp" >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:inputType="phone"
+                    android:digits="1234567890"
+                    android:ems="10"
+                    android:id="@+id/ttCodeBlank"
+                    android:hint="@string/ttCode"
+                    android:textSize="15dp"
+                    android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="207dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/regionBlank"
+                    android:hint="@string/region"
+                    android:textSize="15dp"
+                    android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/agentBlank"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:ms_multiline="false"
+                app:ms_hint="@string/agent"
+                app:ms_enableFloatingLabel="true"
+                app:ms_enableErrorLabel="true"
+                app:ms_baseColor="@color/spinner_base"
+                android:layout_gravity="center_horizontal" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/supervisorBlank"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:ms_multiline="false"
+                app:ms_hint="@string/supervisor"
+                app:ms_enableFloatingLabel="true"
+                app:ms_enableErrorLabel="true"
+                app:ms_baseColor="@color/spinner_base"
+                android:layout_gravity="center_horizontal" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/kanalSbyta"
+                    android:id="@+id/kanalSbytaText"
+                    android:textAlignment="gravity"
+                    android:gravity="left|center" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/kanalSbytaRadio">
+
+                    <RadioButton
+                        android:layout_width="75dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/kanalSbytaAlradioRadioButton"
+                        android:checked="true"
+                        android:onClick="hideSoftKeyboard"
+                        android:gravity="left|center"
+                        android:text="@string/kanalSbytaAl" />
+
+                    <RadioButton
+                        android:layout_width="75dp"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/kanalSbytaMbradioButton"
+                        android:checked="false"
+                        android:onClick="hideSoftKeyboard"
+                        android:gravity="left|center"
+                        android:text="@string/kanalSbytaMb" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+
+                        android:id="@+id/kanalSbytaMlradioButton"
+                        android:checked="false"
+                        android:onClick="hideSoftKeyboard"
+                        android:gravity="left|center"
+                        android:text="@string/kanalSbytaMl" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp">
+
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ttType"
+                    android:id="@+id/ttTypeText"
+                    android:textAlignment="gravity"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ttTypeFalse"
+                    android:id="@+id/textView"
+                    android:gravity="left|center" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/ttTypeSwitch"
+                    android:onClick="hideSoftKeyboard"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="53dp"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ttTypeTrue"
+                    android:id="@+id/ttTypeTrueText"
+                    android:gravity="right|center" />
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/ttBlank"
+                android:hint="@string/tt"
+                android:textSize="15dp"
+                android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/locationBlank"
+                android:hint="@string/location"
+                android:focusable="true"
+                android:singleLine="true"
+                android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/ownerBlank"
+                android:hint="@string/owner"
+                android:focusable="true"
+                android:singleLine="true"
+                android:selectAllOnFocus="false"
+                android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:text="@string/locate"
+                    android:id="@+id/Location"
+                    android:onClick="goLocate"
+                    android:layout_alignParentLeft="true"
+                    style="@style/AppThemeNonDrawer"
+                    android:elegantTextHeight="true"
+                    android:background="@android:color/transparent"
+                    android:textStyle="bold"
+                    android:textColor="@color/accent" />
+
+                <Button
+                    style="@style/AppThemeNonDrawer"
+                    android:layout_width="130dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/timetable"
+                    android:id="@+id/timetableBlank"
+                    android:onClick="goTimetable"
+                    android:elegantTextHeight="true"
+                    android:background="@android:color/transparent"
+                    android:textStyle="bold"
+                    android:textColor="@color/accent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@+id/Location"
+                    android:layout_centerVertical="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</RelativeLayout>

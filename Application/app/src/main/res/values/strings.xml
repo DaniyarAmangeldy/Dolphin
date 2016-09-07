@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name" translatable="false">Dolphin</string>
+
+
+    <string name="info_fr1">List</string>
+    <string name="info_fr2">Map</string>
+    <string name="info_fr3">About</string>
+    <string name="info_fr4">Exit</string>
+    <string name="info_fr5">Calendar</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="close">Close</string>
+    <string name="exit_confirm">Exit from application?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">ok</string>
+    <string name="newBlank">Create Terminal</string>
+    <string name="about_fr3">\tKim Yevgeniy\n\t+7(702)663-25-17\n\tyevgeniy.kim@gmail.com\n\n\tDaniyar Amangeldy\n\t+7(708)188-99-54\n\tdaniyar.amangeldy@gmail.com\n\n\tKoralas Ilyasov\n\t+7(707)211-07-44\n\tkoralas.ilyassov@gmail.com</string>
+    <string name="title_activity_fill_blank" translatable="false">FillBlank</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_preview">Info</string>
+    <string name="ttCode">TT code</string>
+    <string name="region">Region</string>
+    <string name="agent">Agent</string>
+    <string name="agentCode">Agent code</string>
+    <string name="supervisor">Supervisor</string>
+    <string name="supervisorCode">Supervisor code</string>
+    <string name="kanalSbyta">Channel</string>
+    <string name="kanalSbytaAl" translatable="false">AL</string>
+    <string name="kanalSbytaMb" translatable="false">MB</string>
+    <string name="kanalSbytaMl" translatable="false">ML</string>
+    <string name="ttType">TT type</string>
+    <string name="ttTypeFalse">No contract</string>
+    <string name="ttTypeTrue" translatable="false">RS</string>
+    <string name="tt" translatable="false">ТТ</string>
+    <string name="timetable">Work since</string>
+    <string name="location">Adress</string>
+    <string name="owner">Owner</string>
+    <string name="FillErrorTitle">Error!</string>
+    <string name="FillErrorDescription">Fill all lines</string>
+    <string name="itemFillErrorDescription">Fill line</string>
+    <string name="edit">Edit Terminal</string>
+    <string name="delete">Delete</string>
+    <string name="locate">Choose on map</string>
+    <string name="deleteDescription">Do you want to delete?</string>
+    <string name="title_activity_location" translatable="false">Map</string>
+    <string name="title_activity_report" translatable="false"> </string>
+    <string name="title_activity_fill_report">Fill Report</string>
+    <string name="title_activity_edit_report">Edit Report</string>
+    <string name="profit">Owner</string>
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="searchHint">Search ...</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+    <string name="hintMoney">Profit</string>
+    <string name="share">Share</string>
+
+
+
+</resources>
